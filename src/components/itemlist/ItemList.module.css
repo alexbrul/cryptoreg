@@ -1,0 +1,12 @@
+.container{
+    background-color: green;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-content: start;
+    overflow-x: auto;
+    row-gap: 20px;
+    border: solid black;
+    justify-items: center;
+
+}

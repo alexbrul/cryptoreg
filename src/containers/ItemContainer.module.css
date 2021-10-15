@@ -1,0 +1,7 @@
+.ItemContainer {
+    box-sizing: border-box;
+    background-color: #c5901d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

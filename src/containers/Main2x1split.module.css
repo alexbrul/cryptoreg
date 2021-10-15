@@ -1,0 +1,10 @@
+.container{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.itemDiv {
+    background-color: #97a3bc;
+  }
