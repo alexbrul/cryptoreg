@@ -9,11 +9,11 @@ import SelectedItems from './components/selectedItems/SelectedItems.js';
 function App() {
   const [register, setRegister] = useState("Total amount")
   const [selectedItems, setSelectedItems] = useState([])
-  let allItems = [{name: "appleee", price: 10} , {name: "Milk", price: 20}, {name: "bread", price:15}, {name:"hotdogs", price: 5}, {name: "water", price: 3}, {name: "apple", price: 10} , {name: "Milk", price: 20}, {name: "bread", price:15}, {name:"hotdogs", price: 5}, {name: "water", price: 3},{name: "apple", price: 10} , {name: "Milk", price: 20}, {name: "bread", price:15}, {name:"hotdogs", price: 5}, {name: "water", price: 3},{name: "apple", price: 10} , {name: "Milk", price: 20}, {name: "bread", price:15}, {name:"hotdogs", price: 5}, {name: "water", price: 3},{name: "apple", price: 10} , {name: "Milk", price: 20}, {name: "bread", price:15}, {name:"hotdogs", price: 5}, {name: "water", price: 3},]
-  
+  let allItems = [{ name: "appleee", price: 10 }, { name: "Milk", price: 20 }, { name: "bread", price: 15 }, { name: "hotdogs", price: 5 }, { name: "water", price: 3 }, { name: "apple", price: 10 }, { name: "Milk", price: 20 }, { name: "bread", price: 15 }, { name: "hotdogs", price: 5 }, { name: "water", price: 3 }, { name: "apple", price: 10 }, { name: "Milk", price: 20 }, { name: "bread", price: 15 }, { name: "hotdogs", price: 5 }, { name: "water", price: 3 }, { name: "apple", price: 10 }, { name: "Milk", price: 20 }, { name: "bread", price: 15 }, { name: "hotdogs", price: 5 }, { name: "water", price: 3 }, { name: "apple", price: 10 }, { name: "Milk", price: 20 }, { name: "bread", price: 15 }, { name: "hotdogs", price: 5 }, { name: "water", price: 3 },]
+
   useEffect(() => {
     let count = 0;
-    selectedItems.map(item => count = count+item.price*item.count)
+    selectedItems.map(item => count = count + item.price * item.count)
     setRegister("Total price: " + count);
   }, [selectedItems])
   return (
@@ -27,15 +27,15 @@ function App() {
           <li>Automatic QR code for payments</li>
           <li>Simple statistics</li>
           <li>Stock Status</li>
+          <li>Store it locally or push it to the blockchain</li>
         </ul>
       </header>
       <div className="App-main">
         <TotalAmount amount={register}></TotalAmount>
       </div>
       <Main2x1split>
-        <SelectedItems selected={selectedItems} setShoppingList={setSelectedItems}/>
+        <SelectedItems selected={selectedItems} setShoppingList={setSelectedItems} />
         <ItemList items={allItems} selected={selectedItems} setSelected={setSelectedItems} />
-
       </Main2x1split>
     </div>
   );

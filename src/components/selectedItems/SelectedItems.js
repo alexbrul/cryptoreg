@@ -1,4 +1,5 @@
 import React from 'react'
+import QrCode from '../QrCode.js'
 
 export default function SelectedItems(props) {
     const tmp = [{name: 'Apple', price: 10, count: 0}, {name: 'Bread', price: 30, count: 0}]
@@ -10,6 +11,8 @@ export default function SelectedItems(props) {
                     <li>{i.name + "  Price: " + i.price + " Count: " + i.count}</li>
                 ))}
             </ul>
+            <QrCode/>
+
         </div>
     )
 }
