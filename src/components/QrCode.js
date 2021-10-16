@@ -37,8 +37,8 @@ export default function QrCode(props) {
                             console.log(err)
                         })
                 })
-        } catch (err) {
-            console.log(err)
+        } catch (error) {
+            console.log(error)
         }
     }
     const tmp = 'https://www.bitcoinqrcodemaker.com/api/?style=ethereum&address=0x29D7d1dd5B6f9C864d9db560D72a247c178aE86B&amount=10'
