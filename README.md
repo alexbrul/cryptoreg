@@ -1,4 +1,4 @@
-![](name-of-giphy.gif)
+![](app3.gif)
 
 
 1) yarn
